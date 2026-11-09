@@ -1,0 +1,9 @@
+list of requirements. 
+generate a list of keys of a certain length
+encrypt and decrypt using XOR op
+Object orientation if possible. 
+allow for users to input text and their uploaded key. 
+multiple windows if necessary. 
+file IO. etc. 
+reading from a file or uploading the messages, 
+give the user a choice
