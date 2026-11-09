@@ -1,0 +1,45 @@
+list of requirements. 
+generate a list of keys of a certain length
+encrypt and decrypt using XOR op
+Object orientation if possible. 
+allow for users to input text and their uploaded key. 
+multiple windows if necessary. 
+file IO. etc. 
+reading from a file or uploading the messages, 
+give the user a choice
+when decrypting, include space bar. 
+for (int i = 0; i < summaryArray.Length; i++)
+{
+    if (summaryArray[i] > 64 && summaryArray[i] <= 90)
+    {
+        if (summaryArray[i] <= 13 + 64)
+        {
+            num = (summaryArray[i] + 13);
+            tempSum += (char)num;
+        }
+        else if (summaryArray[i] > 13 + 64)
+        {
+            num = (summaryArray[i] - 13);
+            tempSum += (char)num;
+
+        }
+    }
+    else if (summaryArray[i] > 96 && summaryArray[i] <= 122)
+    {
+        if (summaryArray[i] <= 13 + 96)
+        {
+            num = (summaryArray[i] + 13);
+            tempSum += (char)num;
+        }
+        else if (summaryArray[i] > 13 + 96)
+        {
+            num = (summaryArray[i] - 13);
+            tempSum += (char)num;
+
+        }
+    }
+    else
+    {
+        tempSum += summaryArray[i]; //if neither its a special character so just append. 
+    }
+}
